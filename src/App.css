@@ -1,38 +1,216 @@
-.App {
+/* set size and color of button */
+.follow-button {
+  font-size: 1rem;
+  padding: 5px px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+.follow {
+  font-weight: bold;
+  color: #1565c0;
+}
+/* set size and color of button */
+.love-button {
+  font-size: 1rem;
+  padding: 5px px;
+  background-color: rgb(242, 129, 140);
+  color: white;
+  border-radius: 10px;
+}
+
+.love {
+  font-weight: bold;
+  color: #1565c0;
+}
+
+/* center the cards on the home page and set color and size */
+.border{
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px;
+  margin-top: 500px;
+  background-color:#5ba3eb;
+} 
+
+/* style the delete post button, set size */
+.deleteButton {
+  height: 10px;
+  border: none;
+  font-size: 30px;
+  background-color:#5ba3eb;
+  margin-left: 400px;
+}
+/* center the "Blog Post" heading on Home Page */
+.blogPost {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* style the Click Counter */
+.hideBtn {
+  position:absolute;
+  margin-top: 1px; 
+  background-color: white;
+  border: none; 
+  /* display: none;  */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* set background color of login page */
+.loginPage {
+  background-color: #5ba3eb;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* hide the radio button that allows the click on the following and like components */
+input[type="radio"] {
+  display: none;
+}
+/* create pointer cursor when hovering over the 'Like' */
+.like {
+  cursor: pointer;
+  transition: color 200ms;
+}
+/* set font and color of the Travel Blog title on the About page */
+.tbTitle {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:blue;
+}
+/* set font on About page */
+.para {
+  text-size-adjust: 20px;
+  font-size: 20px;
+  font-family:cursive;
+}
+/* create space between the images and the Follow Us title on About page */
+.sf {
+  padding: 50px;
+}
+/* create space between the paragraph and the images on the About page */
+.travel {
+  padding: 20px 50px;
+  margin-bottom: 550px;
+}
+/* space out images on About page */
+.one {
+  margin-right: 50px;
+}
+/* space out images on About page */
+.three {
+  margin-left: 50px;
+}
+/* sytle the log out button - make red, curve edges */
+.signOut {
+  background-color: rgb(231, 88, 88);
+  border-radius: 1000px;
+  color:#ebebeb;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0px;
+}
+/* style the navigation bar, set color blue*/
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: blue;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+/* set text on nav bar to white */
+.about {
   color: white;
 }
+/* set text on nav bar to white */
+.login {
+  color: white;
+}
+/* set text on nav bar to white */
+.createpost {
+  color: white;
+}
+/* set text on nav bar to white */
+.home {
+  color: white;
+}
+/* set size of social media icons and space out */
+a {
+  align-items: center;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+  padding:100px;
+}
+/* center heading on Create Post */
+.h3CreatePost {
+  text-align: center;
+}
+  
 
-.App-link {
-  color: #61dafb;
+/* create space between inputs */
+input,
+textarea {
+  margin-top: 5px;
+}
+/* style login page, center log in and change background color */
+.loginPage {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* set size of text on Sign in page */
+.loginPage p {
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* GOOGLE BUTTON FROM CODEPEN */
+.login-with-google-btn {
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 5px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+/* position footer at bottom of page and set color */
+footer {
+  /* position: fixed; */
+  position: sticky;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+  margin-top: 400px;
 }
